@@ -1,0 +1,70 @@
+﻿<Window
+    x:Class="TestViewModelHelper.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:TestViewModelHelper"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="525"
+    Height="350"
+    mc:Ignorable="d">
+    <Grid>
+        <Button
+            x:Name="CalculateButton"
+            Width="173"
+            Margin="81,235,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="CalculateButton_Click"
+            Content="Commit Values and Calculate" />
+        <Button
+            x:Name="RevertButton"
+            Width="173"
+            Margin="81,269,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="RevertButton_Click"
+            Content="Revert Values" />
+        <TextBox
+            Width="31"
+            Height="23"
+            Margin="258,44,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding Value1, Mode=TwoWay, FallbackValue=2}"
+            TextWrapping="Wrap" />
+        <TextBox
+            Width="31"
+            Height="23"
+            Margin="258,72,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding Value2, FallbackValue=2, Mode=TwoWay}"
+            TextWrapping="Wrap" />
+        <TextBox
+            Width="31"
+            Height="23"
+            Margin="258,123,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding Result, FallbackValue=4, Mode=OneWay}"
+            TextWrapping="Wrap" />
+        <Label
+            Margin="194,44,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="V1" />
+        <Label
+            Margin="194,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="V2" />
+        <Label
+            Margin="194,123,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Result" />
+
+    </Grid>
+</Window>

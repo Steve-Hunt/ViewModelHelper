@@ -50,6 +50,7 @@
     <Compile Include="IntToVisibilityConverter.cs" />
     <Compile Include="NotifyPropertyChangedCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyEx.cs" />
     <Compile Include="ThreadedWindow.cs" />
     <Compile Include="UIThread.cs" />
     <Compile Include="ViewModelCore.cs" />
